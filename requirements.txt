@@ -1,0 +1,5 @@
+Flask
+Flask-SQLAlchemy
+werkzeug
+psycopg2-binary  # Or psycopg for better compatibility
+gunicorn
