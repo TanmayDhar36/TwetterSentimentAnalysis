@@ -11,8 +11,8 @@ from nltk.stem import PorterStemmer
 app = Flask(__name__)
 
 # Load model and vectorizer
-model = pickle.load(open('D:/Python Practice/TweeterSentimentAnaysis/trained_model.sav', 'rb'))
-vectorizer = pickle.load(open('D:/Python Practice/TweeterSentimentAnaysis/vectorizer.pkl', 'rb'))
+model = pickle.load(open('trained_model.sav', 'rb'))
+vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))
 
 # Preprocessing function (same as training)
 port_stem = PorterStemmer()
@@ -37,3 +37,4 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
